@@ -1,0 +1,18 @@
+{
+  "name": "graphql-app",
+  "version": "1.0.0",
+  "description": "Azure Functions sample for the Serverless framework",
+  "main": "handler.js",
+  "keywords": [
+    "azure",
+    "serverless"
+  ],
+  "devDependencies": {
+    "serverless-azure-functions": "*"
+  },
+  "dependencies": {
+    "apollo-server-azure-functions": "^2.4.0",
+    "graphql": "^14.1.1",
+    "serverless-offline": "^4.4.0"
+  }
+}
