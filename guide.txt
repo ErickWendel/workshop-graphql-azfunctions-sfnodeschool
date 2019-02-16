@@ -9,23 +9,22 @@
         db.js
         resolvers.js
         schemas.js
+4o add $return to the json
 5o create an account on MLab.com and get your connection string
 6o go to db.js and create the MongoDB connection
-7o go to Index.js and create the main function
-8o import mongodb and create the connection in at the main.js file
-9o change the exports to use async/await
-10o run and test if everything is ok
-11o add to schemas file our createHero function
-12o add to resolvers file our class and the function to expose resolvers
-13 add to the function our mutation of createHeroes 
-14 import to index.js file the schemas and resolvers modules
-15 run and test if everything is ok
-16 add to our getHeroes operation on the schemas file
-17 add to resolvers our Query with the getHeroes operation
-18 run and test if everything is ok
-19 make the same process to update and delete
-20 create a storage account on azure
-21 create a functionapp 
-22 publish app to azure
-23 run and test if everything is ok
+7o import mongodb and create the connection at the apolloServer context
+8o run and test if everything is ok
+9o add to schemas file our createHero function
+10o add to resolvers file our class and the function to expose resolvers
+11 add to the function our  createHeroes' mutation 
+12 import to index.js file the schemas and resolvers modules
+13 run and test if everything is ok
+14 on the schemas file add to our getHeroes'query operation 
+15 on resolvers add our getHeroes Query
+16 run and test if everything is ok
+17 make the same process to update and delete
+18 create a storage account on azure
+19 create a functionapp 
+20 publish app to azure
+21 run and test if everything is ok
 
