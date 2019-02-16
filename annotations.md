@@ -6,21 +6,7 @@ az account list
 
 ## Technical Requirements
 
-- Node Version Manager (NVM) 8+
-    - Windows: https://github.com/coreybutler/nvm-windows
-    - Linux Ubuntu: https://github.com/creationix/nvm
-    - Mac OS: http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/
-
-- VSCode
-    - https://code.visualstudio.com/
-
-- Azure Command Line Interface (CLI)
-    - Windows: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest
-    - Linux Ubuntu: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
-    - Mac OS: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
-
-- Azure Functions Core Tools
-    - https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2
+- [Access here the requirements section.](https://gist.github.com/ErickWendel/e45d45a97e068e44303f0c2056bf647b)
 
 ## Starting
 
