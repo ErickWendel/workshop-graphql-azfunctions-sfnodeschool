@@ -10,10 +10,16 @@ const Db = require('./src/db')
 
 
 async function main() {
-        const { heroes } = await Db.connect()
+         
         const server = new ApolloServer({
+            resolvers,
             typeDefs: schema,
-            resolvers: resolvers(heroes),
+            context: async () => {
+                const {
+                    heroes
+                } = await Db.connect()
+                return { db: { heroes } }
+            },
             formatError: error => {
                 console.log('Error***', error);
                 return error;
