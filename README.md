@@ -1,8 +1,12 @@
-# Annotations 
+# Creating serverless applications using graphql
 
 az login
 az account list
 <!-- # az account set --subscription "Visual Studio Enterprise" -->
+
+## Presentation Slides
+
+- [Creating serverless applications using graphql](http://bit.ly/graphql-azfunction-erickwendel)
 
 ## Technical Requirements
 
@@ -69,4 +73,4 @@ az storage account delete \
 ## Keep in touch! 
  - [@erickwendel_](https://twitter.com/erickwendel_)
  - [Linkedin](https://br.linkedin.com/in/erickwendel)
- - [erickwendel.com/](https://erickwendel.com/)
+ - [erickwendel.com](https://erickwendel.com/)
