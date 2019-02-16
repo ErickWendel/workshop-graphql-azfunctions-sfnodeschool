@@ -1,9 +1,5 @@
 # Creating serverless applications using graphql
 
-az login
-az account list
-<!-- # az account set --subscription "Visual Studio Enterprise" -->
-
 ## Presentation Slides
 
 - [Creating serverless applications using graphql](http://bit.ly/graphql-azfunction-erickwendel)
@@ -15,6 +11,10 @@ az account list
 ## Starting
 
 ```sh
+az login
+az account list
+# az account set --subscription "Visual Studio Enterprise"
+
 RESOURCE=graphqlsfnode
 LOCATION=eastus
 STORAGE_ACCOUNT=graphapi
