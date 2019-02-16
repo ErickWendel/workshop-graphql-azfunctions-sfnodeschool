@@ -1,7 +1,5 @@
 # Annotations 
 
-npm i -g serverless
-
 az login
 az account list
 <!-- # az account set --subscription "Visual Studio Enterprise" -->
@@ -44,12 +42,15 @@ npm i apollo-server-azure-functions
 npm i graphql
 ```
 
-```sh
 add $return to function.json
 
-
+```sh
 npm i graphql-mongodb-projection
+```
 
+## Publishing
+
+az group create --name $RESOURCE --location $LOCATION
 
 az storage account create \
     --name $STORAGE_ACCOUNT \
@@ -66,6 +67,9 @@ az functionapp create \
 
 func azure functionapp publish $FUNCTION_APP
 
+## Cleaning up
+
+```sh
 az functionapp delete \
     --resource-group $RESOURCE \
     --name $FUNCTION_APP
