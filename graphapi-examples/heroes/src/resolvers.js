@@ -29,9 +29,7 @@ const resolvers = {
             }
 
             const projection = graphqlMongodbProjection(info)
-
             return context.db.heroes.find(args, projection).toArray()
-            // return collection.find(args, projection).toArray()
         }
     },
     Mutation: {
