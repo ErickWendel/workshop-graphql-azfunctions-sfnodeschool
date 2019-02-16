@@ -65,3 +65,8 @@ az storage account delete \
     --resource-group $RESOURCE \
     --yes
 ```
+
+## Keep in touch! 
+ - [@erickwendel_](https://twitter.com/erickwendel_)
+ - [Linkedin](https://br.linkedin.com/in/erickwendel)
+ - [erickwendel.com/](https://erickwendel.com/)
