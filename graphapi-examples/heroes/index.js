@@ -9,28 +9,30 @@ const schema = require('./src/schemas')
 const Db = require('./src/db')
 
 
-async function main() {
-         
-        const server = new ApolloServer({
-            resolvers,
-            typeDefs: schema,
-            context: async () => {
-                const {
-                    heroes
-                } = await Db.connect()
-                return { db: { heroes } }
-            },
-            formatError: error => {
-                console.log('Error***', error);
-                return error;
-            },
-            formatResponse: response => {
-                console.log(response);
-                return response;
-            },
-        })
-        return server
-}
+
+const server = new ApolloServer({
+    resolvers,
+    typeDefs: schema,
+    context: async () => {
+        const {
+            heroes
+        } = await Db.connect()
+        return {
+            db: {
+                heroes
+            }
+        }
+    },
+    formatError: error => {
+        console.log('Error***', error);
+        return error;
+    },
+    formatResponse: response => {
+        console.log(response);
+        return response;
+    },
+})
+
 // const resolvers = {
 //     Query: {
 //         hello: (_, {
@@ -53,9 +55,4 @@ async function main() {
 // }
 // `
 
-module.exports = (context, req) => {
-    main()
-        .then(server => 
-            server.createHandler()(context, req)
-        )
-}
+module.exports = server.createHandler()
