@@ -1,4 +1,7 @@
-1o Create a simple azure function
+0o install the azure function extension on VSCode
+1o Create a simple azure function 
+1.1 command + shift + p -> initialize project for use with vscode 
+1.2 debug application using F5 and break points
 2o create a simple apoloserver app
 3o add $return to the json
 4o create other function and create the folder structure
