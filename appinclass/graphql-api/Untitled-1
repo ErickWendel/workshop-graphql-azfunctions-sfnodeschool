@@ -1,0 +1,9 @@
+1o install requirements
+2o func init --name api-example
+3o cd api-example
+4o func new --name graphql-api --template "Http Trigger"
+5o func host start 
+6o browser http://localhost:7071/api/api-example?name=erickwendel
+7o cd graphql-api
+8o npm init -y
+9o npm i graphql apollo-server-azure-functions
